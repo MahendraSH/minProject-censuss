@@ -27,6 +27,20 @@ app.post('/', (req, res) => {
 console.log(req.body);
 });
 
+
+
+app.post('/login', (req, res) => {
+    console.log(req.body);
+    res.redirect('/');
+});
+
+app.post('/register', (req, res) => {
+    console.log(req.body);
+    res.redirect('/');
+});
+
+
+
 app.listen(3000, () => {
     console.log(' listening on port 3000!')
 });

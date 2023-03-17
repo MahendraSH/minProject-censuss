@@ -15,6 +15,7 @@ input[type="email"] {
   display: inline-block;
   border: none;
   background: #121212c3;
+  color: #ffffffd8;
 }
 .imglogin {
   width: 20rem;
