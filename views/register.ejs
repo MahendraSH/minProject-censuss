@@ -1,0 +1,26 @@
+<%- include ('partials/heder.ejs'); %>
+<body>
+    <div class="container">
+        
+    <h1>Registor page</h1>
+     <div class="row">
+        <div class="col-md-6">
+            
+    <form action="/registor" method="post" class="mb-5">
+        <label for="username">username:</label>
+        <input type="text" name="username" placeholder="username" id="username"  >
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" placeholder="exmple@com">
+        <input type="password" name="password" placeholder="password" id="password">
+        <input type="submit" value="register" class="btn btn-primary">
+    </form>
+    <a href="http://localhost:3000/login" class=" btn btn-dark" >login page</a>
+        </div>
+        <div class="col-md-6">
+            <img src="/images/population-census-2021.jpg" alt="" class="imglogin">
+        </div>
+     </div>
+    </div>
+
+</body>
+</html>
