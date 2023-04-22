@@ -37,7 +37,7 @@ route.get('/', (req, res) => {
     var password = req.body.password;
     var sql = "insert into users values ?";
     var values = [
-      [username, email, password]
+      [,name, email, password]
     ];
     con.query(sql, [values], (error, results, fields) => {
       if(error) throw error;
