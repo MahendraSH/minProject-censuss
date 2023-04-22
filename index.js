@@ -1,45 +1,28 @@
 
 const express = require('express')
+const mysql = require('mysql');
 const ejs = require('ejs')
 const app = express();
+var bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
+app.use('/',require('./routes/routesLogin'))
 
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/login', (req, res) => {
-  res.render('login');
-});
-
-app.get('/register', (req, res) => {
-  res.render('register');
-});
 
 
-app.post('/', (req, res) => {
+
+
+// app.post('/', (req, res) => {
     
-console.log(req.body);
-});
-
-
-
-app.post('/login', (req, res) => {
-    console.log(req.body);
-    res.redirect('/');
-});
-
-app.post('/register', (req, res) => {
-    console.log(req.body);
-    res.redirect('/');
-});
-
-
+// console.log(req.body);
+// });
 
 app.listen(3000, () => {
     console.log(' listening on port 3000!')

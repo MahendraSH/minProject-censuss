@@ -1,0 +1,668 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>INDIACENSUS.COM</title>
+    <!-- <link rel="stylesheet" href="./gallery.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f48230e5b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f48230e5b1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../../public/css/index.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@200&family=Nanum+Gothic&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Karla', sans-serif;
+            /*BODY*/
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+        }
+
+        .container-fluid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav1 {
+            padding-right: 5rem;
+            padding-left: 4rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navspan h4 {
+            font-weight: 700;
+
+        }
+
+        .logo_img {
+
+            height: 50px;
+            width: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all .6s cubic-bezier(.165, .84, .44, 1);
+        }
+
+        a:hover {
+            color: #0d6efd;
+            /*Brand*/
+        }
+
+        nav {
+      background-color: #06010dfa;
+      padding-left: 4rem;
+      height: 5rem;
+      position: -webkit-sticky;
+      position: sticky;
+    }
+
+    .nav_link {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+      padding: 10px;
+      margin-left: 10rem;
+      transition: all 0.6s ease-in-out;
+
+    }
+    #contact {
+    margin-top: 20rem;
+    padding-top: 5rem;
+    width: 100%;
+    background: linear-gradient(rgb(2, 1, 33), rgb(56, 2, 36));
+}
+    .nav_link {
+      text-decoration: none;
+    }
+
+    .nav_link:hover {
+      color: black;
+      background-color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+
+        .social-icons {
+            background-color: #0d6efd;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            height: 40px;
+            width: 40px;
+            color: #fff;
+            margin-right: 6px;
+        }
+
+        .social-icons:hover {
+            opacity: 0.6;
+        }
+
+        .btn-brand {
+            color: #fff;
+            background-color: #0d6efd;
+            border-radius: 5px;
+            font-weight: 300;
+            font-size: 1.2rem;
+            padding: 1rem 1.5rem;
+        }
+
+        .sign {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .text-brand {
+            color: #0d6efd;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        .p-brand {
+            font-size: 1.2rem;
+        }
+
+        .section-padding .line {
+            width: 60px;
+            height: 2px;
+            background-color: #0d6efd;
+            display: inline-block;
+        }
+
+        #dropdownMenuButton {
+            box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 1);
+            background-color: #05000cfa;
+            color: whitesmoke;
+        }
+
+        .txt-dark {
+            color: antiquewhite;
+        }
+
+        .dark-theme {
+            background-color: #05000cfa;
+            color: whitesmoke;
+        }
+        #contact {
+    margin-top: 20rem;
+    padding-top: 5rem;
+    width: 100%;
+    background: linear-gradient(rgb(2, 1, 33), rgb(56, 2, 36));
+}
+        .drop{
+  position: relative;
+  z-index: 1500;
+}
+        .section-padding {
+            padding-top: 7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .photo {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 8%;
+            flex-direction: row;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 2.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project .content {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: #0d6efd;
+            transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .content a {
+            color: #fff;
+            font-family: 'Karla', sans-serif;
+            border: 1px solid #0d6efd;
+            /* height: 300px;
+    width: 300px; */
+        }
+
+        .project img,
+        .project .content {
+            transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .project:hover img {
+            transform: translateY(-100%);
+        }
+
+        .project:hover .content {
+            top: 0;
+        }
+
+        .govt{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0 21rem;
+  display: absolute;
+  height: 6rem;
+  margin-top: 8rem;
+}
+.official{
+  text-align: center;
+  background: linear-gradient(rgba(2, 1, 33, 1), rgba(2, 1, 33, 0.99));
+  margin-top: 2rem;
+  width: 100%;  
+  z-index: 1500;
+  height: 16rem;
+  padding-top: 1.3rem;
+  color: white;
+}
+
+#contact {
+    margin-top: 2rem;
+    padding-top: 5rem;
+    width: 100%;
+    background: linear-gradient(rgb(2, 1, 33), rgb(56, 2, 36));
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logobrand">
+            <!-- <div class="logo"><img src="logo.png" alt=""></div> -->
+            <!-- <div class="brand-name"><a class="navbar-brand" href="#">Career Bridge</a></div> -->
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav_link" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav_link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav_link" href="/gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav_link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile navbar
+        <div class="mobile-nav">
+          <a class="nav_link" href="#">Home</a>
+          <a class="nav_link" href="#">About Us</a>
+          <a class="nav_link" href="#">Services</a>
+          <a class="nav_link" href="#">Contact Us</a>
+        </div> -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up" class="col-12">
+                    <h1 class="text-center text-brand">PHOTO GALLERY</h1>
+                    <p class="text-center p-brand">An event gallery is typically a space or venue that is used to host
+                        events,
+                        exhibitions, or displays of various kinds. An event gallery might be used to showcase works of
+                        art,
+                        photographs, historical artifacts, or other types of media or objects. Event galleries can be
+                        found in a
+                        variety of settings, including museums, art galleries, cultural centers, and other public or
+                        private spaces.
+                        They are often used to host exhibitions, concerts, performances, lectures, or other events that
+                        are open to
+                        the public or to specific groups of people. Event galleries can be used for a wide range of
+                        purposes, and
+                        the specific nature of the events and exhibitions they host can vary widely.</p>
+                    <!-- <div class="line"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="dropdown position-fixed top-0 end-0 my-4 me-4 bd-mode-toggle drop">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-sun"></i>
+            <!-- <i class="fa-solid fa-moon"></i> -->
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item dark" href="#" onclick="themeChange()"><i class="fa-solid fa-moon"></i>&nbsp;
+                Dark</a>
+            <a class="dropdown-item light" href="#" onclick="themeChangeback()"><i class="fa-solid fa-sun"></i>
+                Light</a>
+        </div>
+    </div>
+    <div class="container-fluid photo">
+        <div class="col-lg-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery">
+                <div class="project">
+                    <img src="images/images (1).jpg">
+                    <div class="content">
+                        <a href="images/images (1).jpg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (2).jpg">
+                    <div class="content">
+                        <a href="images/images (2).jpg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (3).jpeg">
+                    <div class="content">
+                        <a href="images/images (3).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (4).jpeg">
+                    <div class="content">
+                        <a href="images/images (4).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/india1.jpg">
+                    <div class="content">
+                        <a href="images/india1.jpg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (5).jpeg">
+                    <div class="content">
+                        <a href="images/images (5).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (6).jpeg">
+                    <div class="content">
+                        <a href="images/images (6).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/census1..jpg">
+                    <div class="content">
+                        <a href="images/census1..jpg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (7).jpeg">
+                    <div class="content">
+                        <a href="images/images (7).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (8).jpeg">
+                    <div class="content">
+                        <a href="images/images (8).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (9).jpeg">
+                    <div class="content">
+                        <a href="images/images (9).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (10).jpeg">
+                    <div class="content">
+                        <a href="images/images (10).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (11).jpeg">
+                    <div class="content">
+                        <a href="images/images (11).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (12).jpeg">
+                    <div class="content">
+                        <a href="images/images (12).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (13).jpeg">
+                    <div class="content">
+                        <a href="images/images (13).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (14).jpeg">
+                    <div class="content">
+                        <a href="images/images (14).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (15).jpeg">
+                    <div class="content">
+                        <a href="images/images (15).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (16).jpeg">
+                    <div class="content">
+                        <a href="images/images (16).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (17).jpeg">
+                    <div class="content">
+                        <a href="images/images (17).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (19).jpeg">
+                    <div class="content">
+                        <a href="images/images (19).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/census2.jpg">
+                    <div class="content">
+                        <a href="images/census2.jpg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (21).jpeg">
+                    <div class="content">
+                        <a href="images/images (21).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (22).jpeg">
+                    <div class="content">
+                        <a href="images/images (22).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/images (23).jpeg">
+                    <div class="content">
+                        <a href="images/images (23).jpeg" data-fancybox="gallery">View Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section data-aos="fade-up" data-aos-delay="100" id="contact" style="padding-top: 2rem; margin-top: 5rem;">
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4><a href="#" class="text-brand">Karnataka Police crime Official</a></h4>
+              <p style="color: #fff;">The Karnataka Police is responsible for a wide range of activities and functions,
+                including crime
+                prevention, law enforcement, traffic management, and emergency response. It is divided into several
+                units and divisions, each with its own specific responsibilities and areas of focus. The Karnataka
+                Police works closely with other law enforcement agencies and with the community to ensure the safety and
+                security of the people of Karnataka.
+              <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                  <a class="social-icons" href="https://twitter.com/"><i class="ri-twitter-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="social-icons" href="https://www.facebook.com/"><i class="ri-facebook-box-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="social-icons" href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="social-icons" href="https://www.youtube.com/"><i class="ri-youtube-fill"></i></a>
+                </li>
+              </ul>
+              </p>
+            </div>
+            <div class="col-md-3 ms-auto">
+              <h4 style="color: #fff;">Quick Links</h4>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 style="color: #fff;">Contact</h4>
+              <ul>
+                <li style="color: #fff;">Email: KarPolice@example.com</li>
+                <li style="color: #fff;">Phone: (+917395639045)</li>
+                <li style="color: #fff;">Address: Jorze crater, Mars</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="contaier">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0" style="color: #fff;">Copyright text goes here</p>
+            </div>
+            <div class="col-auto">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section> -->
+  <div class="container govt">
+    <div class="official">
+      <h4>Official Census Website</h4>
+      <h3>Goverment of India</h3>
+      <p>Home | Government of India</p>
+      <button class="btn btn-primary btn-lg my-4" type="button" style="color: #fff; margin-right: 1.6rem;"><a href="https://censusindia.gov.in/census.website/" style="color: #fff; text-decoration: none;" >Census India</a></button>
+    </div>
+  </div>
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-4" style="border-left: 1px solid #0d6efd;"></div>
+            <h4 style="border-left: 1px solid #0d6efd;"><a href="#" class="text-brand">Indian Goverment Census</a></h4>
+            <p style="color: #fff; border-left: 1px solid #0d6efd;">The largest administrative and statistical exercise in the world, counting over 1.3 billion people.The
+              Indian Census aims to provide a reliable snapshot of the country's population, its diversity, and
+              socio-economic characteristics.
+            <!-- <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="social-icons" href="https://twitter.com/"><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="social-icons" href="https://www.facebook.com/"><i class="ri-facebook-box-fill"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="social-icons" href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="social-icons" href="https://www.youtube.com/"><i class="ri-youtube-fill"></i></a>
+              </li>
+            </ul> -->
+            </p>
+          </div>
+          <div class="col-md-3 ms-auto" style="margin-left: 3rem; border-right: 1px solid #0d6efd;">
+            <h4 style="color: #fff;">Quick Links</h4>
+            <ul>
+              <li><a href="#" style="text-decoration: none;">Services</a></li>
+              <li><a href="#" style="text-decoration: none;">Blog</a></li>
+              <li><a href="#" style="text-decoration: none;">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3" style="color: #fff; border-left: 1px solid #0d6efd;"">
+            <h4>Contact</h4>
+            <ul>
+              <li>Email: IndiaCensus@example.com</li>
+              <li>Phone: (+917395639045)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="contaier">
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <p class="mb-0" style="color: #fff;">&copy;Copyright text goes here</p>
+          </div>
+          <div class="col-auto">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function themeChange() {
+            var i = document.body;
+            var text = document.querySelector("#dropdownMenuButton")
+            var txt = document.querySelector(".fa-solid")
+            var nav = document.querySelector(".nav-item")
+            i.classList.add("dark-theme");
+            text.innerHTML = `
+    <i class="fa-solid fa-moon txt-dark"></i>
+    `
+            txt.classList.add("txt-dark");
+            nav.classList.add("txt-dark")
+        }
+        function themeChangeback() {
+            var i = document.body;
+            var text = document.querySelector("#dropdownMenuButton")
+            var txt = document.querySelector(".fa-solid")
+            i.classList.remove("dark-theme");
+            text.innerHTML = `
+    <i class="fa-solid fa-sun" ></i>
+    `
+        }
+    </script>
+</body>
