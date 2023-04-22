@@ -12,36 +12,7 @@ route.get('/gallery', (req, res) => {
     res.render('gallery');
   });
 route.get('/', (req, res) => {
-    res.render('login');
-  });
-  route.post('/', (req, res)=>{
-    var name = req.body.username;
-    var password = req.body.password;
-    var sql = "select * from users where name=? and password=?"
-    con.query(sql, [name, password], (error, results, fields) => {
-      if(error)  throw error;
-      if(results.length > 0){
-        res.redirect('/home');
-      } else {
-        res.redirect('/login');
-      }
-    })
+  res.render('index');
   });
   
-  route.get('/register', (req, res) => {
-    res.render('register');
-  });
-  route.post("/register", (req, res) => {
-    var name = req.body.username;
-    var email = req.body.email;
-    var password = req.body.password;
-    var sql = "insert into users values ?";
-    var values = [
-      [,name, email, password]
-    ];
-    con.query(sql, [values], (error, results, fields) => {
-      if(error) throw error;
-      res.redirect('/home');
-    })
-  })
 module.exports=route;
