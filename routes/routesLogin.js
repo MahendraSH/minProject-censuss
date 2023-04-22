@@ -15,10 +15,10 @@ route.get('/', (req, res) => {
     res.render('login');
   });
   route.post('/', (req, res)=>{
-    var username = req.body.username;
+    var name = req.body.username;
     var password = req.body.password;
-    var sql = "select * from users where user_name=? and password=?"
-    con.query(sql, [username, password], (error, results, fields) => {
+    var sql = "select * from users where name=? and password=?"
+    con.query(sql, [name, password], (error, results, fields) => {
       if(error)  throw error;
       if(results.length > 0){
         res.redirect('/home');
@@ -32,7 +32,7 @@ route.get('/', (req, res) => {
     res.render('register');
   });
   route.post("/register", (req, res) => {
-    var username = req.body.username;
+    var name = req.body.username;
     var email = req.body.email;
     var password = req.body.password;
     var sql = "insert into users values ?";
