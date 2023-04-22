@@ -3,6 +3,8 @@ const express = require('express')
 const mysql = require('mysql');
 const ejs = require('ejs')
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config({ path: './.env' });
 var bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
@@ -24,6 +26,6 @@ app.use('/',require('./routes/routesLogin'))
 // console.log(req.body);
 // });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(' listening on port 3000!')
 });
