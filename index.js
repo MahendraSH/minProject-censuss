@@ -25,6 +25,6 @@ app.use('/', require('./routes/routesLogin'))
 // console.log(req.body);
 // });
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 6000, () => {
     console.log(' listening on port 6000!')
 });
